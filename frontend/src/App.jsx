@@ -2,6 +2,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Toaster } from 'react-hot-toast';
 import { AppRouter } from './router/AppRouter';
+import { CreatorWatermark } from './components/ui/CreatorWatermark';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -19,6 +20,7 @@ function App() {
       <BrowserRouter>
         <AppRouter />
         <Toaster position="bottom-right" />
+        <CreatorWatermark />
       </BrowserRouter>
     </QueryClientProvider>
   );
