@@ -133,14 +133,16 @@
   height: 36px;
   width: auto;
   object-fit: contain;
-  /* Doble sombra para asegurar visibilidad en fondos blancos y oscuros */
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+  /* Brillo negro intenso tipo "neón oscuro" para que resalte incluso en blanco puro */
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 1)) drop-shadow(0 0 8px rgba(0, 0, 0, 0.8));
 }
 
 .creator-socials {
   display: flex;
   gap: 10px;
   align-items: center;
+  /* Este es el truco mágico para que se adapten a la luz: */
+  mix-blend-mode: difference;
 }
 
 .creator-social-link {
@@ -150,27 +152,21 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  /* Volvemos al cristal claro para que se ilumine bonito en fondos oscuros */
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.2); /* Blanco translúcido puro */
+  border: 1px solid rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease;
   text-decoration: none;
 }
 
 .creator-social-link:hover {
-  /* Brillo extra al pasar el mouse */
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.4);
   transform: scale(1.15);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.4);
 }
 
 .creator-social-link svg {
   width: 16px;
   height: 16px;
-  /* Sombra oscura fuerte en los íconos blancos para que resalten en fondos 100% blancos */
-  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8));
 }
 
 @media print {
