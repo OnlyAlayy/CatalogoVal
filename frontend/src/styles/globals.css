@@ -141,8 +141,6 @@
   display: flex;
   gap: 10px;
   align-items: center;
-  /* Este es el truco mágico para que se adapten a la luz: */
-  mix-blend-mode: difference;
 }
 
 .creator-social-link {
@@ -153,6 +151,7 @@
   height: 30px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2); /* Blanco translúcido puro */
+  backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease;
   text-decoration: none;
@@ -161,12 +160,14 @@
 .creator-social-link:hover {
   background: rgba(255, 255, 255, 0.4);
   transform: scale(1.15);
-  box-shadow: 0 0 14px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
 }
 
 .creator-social-link svg {
   width: 16px;
   height: 16px;
+  /* Brillo oscuro para que los íconos blancos (como TikTok) se vean siempre */
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
 }
 
 @media print {
