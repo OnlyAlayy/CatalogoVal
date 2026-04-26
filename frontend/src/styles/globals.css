@@ -160,14 +160,13 @@
 .creator-social-link:hover {
   background: rgba(255, 255, 255, 0.4);
   transform: scale(1.15);
-  box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.15);
 }
 
 .creator-social-link svg {
   width: 16px;
   height: 16px;
-  /* Brillo oscuro para que los íconos blancos (como TikTok) se vean siempre */
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+  /* Sin sombras artificiales, el ícono tendrá su color natural */
 }
 
 @media print {
