@@ -30,9 +30,10 @@ Las categorías son las "carpetas" que organizan tus productos (ej: *Alfajores, 
    - **Orden:** Un número. El `1` aparecerá primero, el `2` segundo, etc.
 4. Haz clic en **Guardar**.
 
-### ✏️ Editar o Eliminar
-- Para modificar el nombre o ícono de una categoría, haz clic en el botón de **Editar** (ícono de lápiz) junto a la categoría.
-- Para borrarla, usa el botón **Eliminar** (ícono de papelera). *Nota: Si una categoría tiene productos adentro, te recomendamos mover esos productos a otra categoría antes de eliminarla.*
+### ✏️ Editar, Mover o Eliminar Categorías
+- **Cambiar el orden:** ¿Quieres que una categoría aparezca primera o última en la página? Solo edita la categoría y cambia el número en "Orden" (ej. pon `1` para que sea la primera, o `99` para que sea la última). ¡Puedes moverlas a tu antojo!
+- **Editar:** Para modificar el nombre o ícono, haz clic en el botón de **Editar** (ícono de lápiz).
+- **Eliminar:** Usa el botón **Eliminar** (ícono de papelera). *Nota: Si una categoría tiene productos adentro, te recomendamos editar esos productos y pasarlos a otra categoría antes de eliminarla.*
 
 ---
 
@@ -47,21 +48,23 @@ Aquí es donde subes las delicias que ofreces.
    - **Nombre del producto:** Ej. *Alfajor de Nuez y Dulce de Leche*.
    - **Descripción:** Cuéntale al cliente qué lo hace especial.
    - **Precio:** Solo el número (ej. `150`).
-   - **Categoría:** Selecciona a qué categoría pertenece (ej. *Alfajores*).
+   - **Categoría:** Selecciona a qué categoría pertenece.
 4. **Opciones Especiales:**
-   - **Disponible:** Si se te agotó el stock temporalmente, puedes "apagar" este interruptor. El producto seguirá existiendo pero los clientes no podrán agregarlo al carrito.
-   - **Destacado:** Si activas esto, el producto aparecerá en grande y con una etiqueta especial, ideal para tus productos estrella o más vendidos.
-5. **Subir Fotos:**
-   - Haz clic en la zona de imágenes o arrastra las fotos desde tu computadora/celular.
-   - Puedes subir **varias fotos a la vez**. La primera foto que subas será la "portada" del producto.
-6. Haz clic en **Guardar Producto**. (Puede tardar unos segundos mientras las fotos se suben a la nube en alta calidad).
+   - **Disponible:** Si se te agotó el stock, puedes "apagar" este interruptor. El producto seguirá existiendo pero los clientes no podrán agregarlo al carrito.
+   - **Destacado:** Si activas esto, el producto aparecerá en grande y con una etiqueta especial.
+   - **✨ Variantes (¡Súper útil!):** Si un producto tiene distintos tamaños o sabores (ej. *Caja de 6* vs *Caja de 12*), puedes usar las Variantes. Cada variante puede tener **el precio exacto que tú quieras asignarle**.
+5. **Subir Múltiples Fotos:**
+   - Haz clic en la zona de imágenes o arrastra las fotos.
+   - **¡Puedes subir todas las fotos que quieras por producto!** La primera foto será la "portada", y las demás formarán una galería deslizable para que tus clientes vean cada detalle.
+6. Haz clic en **Guardar Producto**.
 
 ### 🔄 Editar un producto existente
-Si necesitas cambiar un precio o actualizar una foto:
+Los productos son 100% modificables en cualquier momento:
 1. Busca el producto en tu lista y dale al botón **Editar** (lápiz).
-2. Modifica el precio, el texto, o apaga la opción "Disponible" si te quedaste sin stock.
-3. Si quieres cambiar las fotos, puedes eliminar las que no te gusten y subir nuevas.
-4. Guarda los cambios.
+2. **Cambiar de Categoría:** Si te equivocaste de categoría o creaste una nueva, simplemente selecciona la nueva categoría en la lista desplegable.
+3. Modifica el precio, el texto, o apaga la opción "Disponible" si te quedaste sin stock.
+4. Si quieres cambiar las fotos, puedes eliminar las que no te gusten y agregar más.
+5. Guarda los cambios.
 
 ---
 
