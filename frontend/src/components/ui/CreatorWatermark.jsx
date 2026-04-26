@@ -3,6 +3,9 @@ import signature from '../../assets/images/signaturenobackground.png';
 
 export const CreatorWatermark = () => (
   <div className="creator-watermark" data-html2canvas-ignore="true">
+    <span className="text-[10px] uppercase tracking-[0.2em] text-text-muted font-medium mb-1">
+      Made by
+    </span>
     <img
       src={signature}
       alt="Created by Alay"
