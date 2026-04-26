@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Great+Vibes&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Backgrounds */
+    --color-bg-primary:    #FAF8F5;
+    --color-bg-secondary:  #F3EDE6;
+    --color-bg-dark:       #1C1210;
+    --color-bg-card:       #FFFFFF;
+
+    /* Brand */
+    --color-brand-primary:   #8B5E3C;
+    --color-brand-dark:      #5C3D28;
+    --color-brand-medium:    #A67C5B;
+    --color-brand-light:     #D4B896;
+    --color-brand-accent:    #C4956A;
+    --color-brand-rose:      #E8D5C4;
+
+    /* Text */
+    --color-text-primary:   #2C1810;
+    --color-text-secondary: #6B5347;
+    --color-text-muted:     #9C8578;
+    --color-text-on-dark:   #F3EDE6;
+
+    /* Functional */
+    --color-success:  #5A7A4A;
+    --color-warning:  #C49A6C;
+    --color-error:    #9B3A2A;
+    --color-badge-unavailable: #D5CCC5;
+  }
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg-primary text-text-primary font-sans;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background-color: var(--color-brand-rose);
+    color: var(--color-text-primary);
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12;
+  }
+
+  .section-spacing {
+    @apply py-24 md:py-32;
+  }
+
+  .section-label {
+    @apply text-[11px] font-sans font-medium uppercase tracking-[0.25em] text-brand-medium mb-6;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-5xl font-serif font-light text-text-primary leading-tight;
+  }
+
+  .section-subtitle {
+    @apply text-base md:text-lg font-sans font-light text-text-muted leading-relaxed max-w-2xl;
+  }
+
+  .gold-line {
+    @apply w-10 h-px bg-brand-light;
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #c4a882 transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 3px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #c4a882;
+    border-radius: 20px;
+  }
+}
