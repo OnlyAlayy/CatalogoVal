@@ -5,7 +5,7 @@ import { ArrowRight, ChefHat, Palette, Gift } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { useProducts } from '../hooks/useProducts';
 import eventImg from '../assets/images/Imagen1.png';
-import eventImg2 from '../assets/images/Imagen2.png';
+import eventImg2 from '../assets/images/imagen2.png';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
