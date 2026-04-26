@@ -150,24 +150,27 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  /* Fondo oscuro translúcido para contraste en fondos claros */
-  background: rgba(0, 0, 0, 0.35);
+  /* Volvemos al cristal claro para que se ilumine bonito en fondos oscuros */
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   text-decoration: none;
 }
 
 .creator-social-link:hover {
-  background: rgba(0, 0, 0, 0.55);
+  /* Brillo extra al pasar el mouse */
+  background: rgba(255, 255, 255, 0.25);
   transform: scale(1.15);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
 .creator-social-link svg {
   width: 16px;
   height: 16px;
+  /* Sombra oscura fuerte en los íconos blancos para que resalten en fondos 100% blancos */
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8));
 }
 
 @media print {
