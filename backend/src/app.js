@@ -3,6 +3,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
+const mongoSanitize = require('express-mongo-sanitize');
 
 const app = express();
 
@@ -30,6 +31,7 @@ const authLimiter = rateLimit({
 
 // Middlewares
 app.use(express.json({ limit: '10mb' }));
+app.use(mongoSanitize()); // Prevent NoSQL Injections
 app.use(cors({ origin: process.env.CORS_ORIGIN }));
 if (process.env.NODE_ENV !== 'production') {
   app.use(morgan('dev'));
